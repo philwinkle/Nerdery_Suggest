@@ -1,0 +1,42 @@
+Action Log,protokollieren
+Customer ID,Kunden-ID
+Created At,erstellt am
+Action,Aktion
+Delete,löschen
+Are you sure?,Sind Sie sicher?
+Product Suggestion Queue,Produkt Suggestion Queue
+Convert to Product,Convert to Produkt
+Edit Product Suggestion,Produkt bearbeiten Suggestion
+Product Suggestions,Produkt-Vorschläge
+Product Name,Product Name
+Product Description,Produktbeschreibung
+# of Votes,Anzahl der Votes
+Your product was successfully converted. Please fill in the rest of the information below.,Ihr Produkt wurde erfolgreich umgesetzt. Bitte füllen Sie den Rest der nachstehenden Informationen.
+Item does not exist,Artikel existiert nicht
+Product Suggestion has been successfully updated.,Produkt Suggestion wurde erfolgreich aktualisiert.
+Unable to find item to save,Kann Artikel zu finden zu retten
+Please select product(s),Bitte wählen Sie Produkt (e)
+Please select log entries,Bitte wählen Sie Log-Einträge
+Another product with this name exists in our database! Please try again.,Ein weiteres Produkt mit diesem Namen existiert in unserer Datenbank! Bitte versuchen Sie es erneut.
+An error occurred while registering your vote.,Ein Fehler ist aufgetreten bei der Registrierung Ihrer Stimme.
+Suggest a Product,Schlagen Sie ein Produkt
+Enter the name and a short description of the product below:,Geben Sie den Namen und eine kurze Beschreibung des Produkts unter:
+Product Information,Product Information
+* Required Fields,* Pflichtangaben
+Back,zurück
+Submit,einreichen
+Suggest a Product!,Schlagen Sie ein Produkt!
+View All Suggested Products,Alle Empfohlene Produkte
+Product Votes,Produkt Votes
+Vote for This Product,Stimme für dieses Produkt
+Create a New Suggestion,Erstellen Sie eine neue Suggestion
+You must be logged in.,Sie müssen angemeldet sein
+Log In or Register,Anmelden oder Registrieren
+Are you sure? You cannot vote again until tomorrow.,"Sind Sie sicher? Man kann nicht einmal abstimmen, bis morgen."
+There are no items to display.,Es sind keine Artikel angezeigt werden sollen.
+"We're looking for some great product suggestions. If there's anything that you'd like to see in our online store, please feel free to suggest it to us by <a href='%s'>clicking here</a> or on the button below","Wir sind für einige großartige Produkt Anregungen suchen. Wenn es etwas gibt, dass Sie möchten, in unserem Online-Shop finden, zögern Sie nicht, es uns zu schlagen von <a href='%s'> Sie hier </ a> oder auf den unten stehenden Button"
+"Sorry! Voting is temporarily closed.","Leider! Voting ist vorübergehend geschlossen."
+"Voting has closed for the weekend. Check back again soon.","Stimmen wurden für das Wochenende geschlossen. Prüfen Sie uns bald wieder."
+"You may only use letters and numbers in the Product Name field.","Sie dürfen nur Buchstaben und Zahlen im Feld Produktname."
+"You may only use letters and numbers in the Product Description field.","Sie dürfen nur Buchstaben und Zahlen in der Produktbeschreibung Feld."
+"Sorry, you may only perform one action per day. Please check back tomorrow!","Leider können Sie nur durchführen, eine Aktion pro Tag. Bitte überprüfen Sie morgen wieder!"

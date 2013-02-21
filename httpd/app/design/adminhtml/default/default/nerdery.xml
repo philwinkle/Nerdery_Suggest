@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <suggest_admin_manage>
+        <reference name="content">
+            <block type="suggest/adminhtml_product_grid" name="suggest.product.grid" as="suggest.product.grid" output="toHtml"/>
+        </reference>
+    </suggest_admin_manage>
+</layout>

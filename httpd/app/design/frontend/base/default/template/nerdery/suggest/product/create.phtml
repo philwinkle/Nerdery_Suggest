@@ -1,0 +1,47 @@
+<?php
+/**
+ * @see  Nerdery_Suggest_Block_Product_List
+ * @author philwinkle@gmail.com
+ */
+?>
+<div class="page-title">
+	<h1><?php echo $this->__('Suggest a Product'); ?></h1>
+</div>
+<p><?php echo $this->__('Enter the name and a short description of the product below:'); ?></p>
+
+<div id="messages_product_view"> 
+<?php echo $this->getMessagesBlock()->getGroupedHtml(); ?> 
+</div> 
+
+<form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="form-validate">
+    <div class="fieldset">
+        <input type="hidden" name="success_url" value="<?php echo $this->getSuccessUrl() ?>" />
+        <input type="hidden" name="error_url" value="<?php echo $this->getErrorUrl() ?>" />
+        <h2 class="legend"><?php echo $this->__('Product Information') ?></h2>
+        <ul class="form-list">
+	        <li class="fields">
+	            <label for="product_name" class="required"><em>*</em><?php echo $this->__('Product Name') ?></label>
+	            <div class="input-box">
+	                <input type="text" name="product_name" id="product_name" value="<?php echo $this->htmlEscape($this->getCustomerFormData()->getProductName()) ?>" title="<?php echo $this->__('Product Name') ?>" class="input-text required-entry" />
+	            </div>
+	        </li>
+	        <li class="fields">
+	            <label for="product_description" class="required"><em>*</em><?php echo $this->__('Product Description') ?></label>
+	            <div class="input-box">
+	                <input type="text" name="product_description" id="product_description" value="<?php echo $this->htmlEscape($this->getCustomerFormData()->getProductDescription()) ?>" title="<?php echo $this->__('Product Description') ?>" class="input-text required-entry" />
+	            </div>
+	        </li>
+	    </ul>
+	</div>
+    <div class="buttons-set">
+        <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+        <p class="back-link"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>" class="back-link"><small>&laquo; </small><?php echo $this->__('Back') ?></a></p>
+        <button type="submit" title="<?php echo $this->__('Submit') ?>" class="button"><span><span><?php echo $this->__('Submit') ?></span></span></button>
+    </div>
+</form>
+
+<script type="text/javascript">
+//<![CDATA[
+var dataForm = new VarienForm('form-validate', true);
+//]]>
+</script>

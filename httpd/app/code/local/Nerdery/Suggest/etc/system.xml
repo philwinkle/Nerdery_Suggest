@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+	    <nerdery translate="label" module="suggest">
+	        <label>Nerdery</label>
+	        <sort_order>100</sort_order>
+	    </nerdery>
+	</tabs> 
+	<sections>
+		<nerdery translate="label">
+		  <label>Product Suggestion</label>
+		  <tab>nerdery</tab>
+		  <frontend_type>text</frontend_type>
+		  <sort_order>1000</sort_order>
+		  <show_in_default>1</show_in_default>
+		  <show_in_website>1</show_in_website>
+		  <show_in_store>1</show_in_store>
+		  <groups>
+		    <!-- New groups go here -->
+		    <suggest translate="label">
+		      <label>Product Suggestion</label>
+		      <frontend_type>text</frontend_type>
+		      <sort_order>100</sort_order>
+		      <show_in_default>1</show_in_default>
+		      <show_in_website>1</show_in_website>
+		      <show_in_store>1</show_in_store>
+		      <fields>
+		        <!-- New fields go here -->
+		        <weekend translate="label comment">
+		          <label>Allow Suggestions and Voting on Weekends</label>
+		          <comment>
+		            <![CDATA[Defaults to false. Setting this to 'true' will allow voting on the Weekends. Weekend days are defined in the store configuration under General > Locale</span>]]>
+		          </comment>
+		          <frontend_type>select</frontend_type>
+		          <source_model>adminhtml/system_config_source_yesno</source_model>
+		          <sort_order>10</sort_order>
+		          <show_in_default>1</show_in_default>
+		          <show_in_website>1</show_in_website>
+		          <show_in_store>1</show_in_store>
+		        </weekend>
+		      </fields>
+		    </suggest>
+		  </groups>
+		</nerdery>
+	</sections>
+</config>

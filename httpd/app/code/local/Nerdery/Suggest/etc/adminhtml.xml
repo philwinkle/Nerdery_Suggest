@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+		    <admin>
+		        <children>
+	                <nerdery_modules translate="title" module="suggest">
+	                    <title>Nerdery</title> 
+	                    <sort_order>9999</sort_order>
+	                    <children>
+	                        <suggestion_module module="suggest">
+							<title>Product Suggestions</title> 
+							<children>
+							    <suggestion_management module="suggest">
+							        <title>Product Suggestions</title> 
+							    </suggestion_management>
+							    <action_log module="suggest">
+							        <title>Action Log</title> 
+							    </action_log>
+							</children>
+	                        </suggestion_module>
+	                    </children>
+	                </nerdery_modules>
+		            <system>
+		                <children>
+		                    <config>
+		                        <children>
+		                            <nerdery>
+		                                <title>Nerdery Product Suggestion Module</title>
+		                            </nerdery>
+		                        </children>
+		                    </config>
+		                </children>
+		            </system>
+		        </children>
+		    </admin>
+        </resources>
+    </acl>
+</config>

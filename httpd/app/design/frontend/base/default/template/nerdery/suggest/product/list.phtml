@@ -1,0 +1,84 @@
+<?php
+/**
+ * @see  Nerdery_Suggest_Block_Product_List
+ * @author philwinkle@gmail.com
+ */
+?>
+
+<div class="page-title">
+	<h1><?php echo $this->__('Suggest a Product!'); ?></h1>
+</div>
+
+<?php if($this->isVotingDisabled()): ?>
+
+	<h2><?php echo $this->__('Sorry! Voting is temporarily closed.');?></h2>
+	<p><?php echo $this->__('Voting has closed for the weekend. Check back again soon.'); ?></p>
+
+<?php elseif($this->isLoggedIn()): ?>
+	
+	<?php if($this->canVote()): ?>
+	<p><?php echo $this->__("We're looking for some great product suggestions. If there's anything that you'd like to see in our online store, please feel free to suggest it to us by <a href='%s'>clicking here</a> or on the button below",$this->getSuggestCreateUrl()); ?></p>
+	<?php endif; ?>
+	<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+
+
+	<h2 class="table-caption"><?php echo $this->__('View All Suggested Products');?></h2>
+	<table class="data-table">
+		<thead>
+			<th><?php echo $this->__('Product Name');?></th>
+			<th><?php echo $this->__('Product Description');?></th>
+			<th><?php echo $this->__('Product Votes');?></th>
+			<?php if($this->canVote()): ?>
+			<th><?php echo $this->__('Vote for This Product');?></th>
+			<?php endif; ?>
+		</thead>
+
+		<?php if($this->canVote()): ?>
+	    <tfoot>
+			<tr>
+				<td colspan="100" class="a-right"><button type="submit" title="<?php echo $this->__('Create a New Suggestion') ?>" class="button" onclick="window.location='<?php echo $this->getSuggestCreateUrl() ?>';"><span><span><?php echo $this->__('Create a New Suggestion') ?></span></span></button></td>
+			</tr>
+	    </tfoot>
+		<?php endif; ?>
+
+		<?php if(!$this->getSuggestions()->count()): ?>
+		<tbody>
+			<tr>
+				<td colspan="999"><?php echo $this->__('There are no items to display.');?></td>
+			</tr>
+		</tbody>
+		<?php endif; ?>
+
+		<tbody>
+		<?php foreach($this->getSuggestions() as $_suggestion):?>
+			<?php $_suggestion_id = (int) $_suggestion['entity_id']; ?>
+			<tr>
+				<td><?php echo $this->htmlEscape($_suggestion['product_name']); ?></td>
+				<td><?php echo $this->htmlEscape($_suggestion['product_description']); ?></td>
+				<td><?php echo $this->htmlEscape($_suggestion['votes']); ?></td>
+
+				<?php if($this->canVote()): ?>
+				<td>
+					<a href="#" onclick="setConfirmCallback('<?php echo $this->getVoteUrl($_suggestion_id) ?>'); return false;">
+						<?php echo $this->__('Vote for this product'); ?>
+					</a>
+				</td>
+				<?php endif; ?>
+			</tr>
+		<?php endforeach; ?>
+		</tbody>
+	</table>
+
+<?php else: ?>
+	<h2><?php echo $this->__('You must be logged in.');?></h2>
+	<p><?php echo $this->__('We\'re looking for some great product suggestions. If you\'d like to recommend something, please log in by <a href="%s">clicking here</a>; registration is free and it takes just a couple of minutes!',$this->getLoginUrl()); ?></p>
+	<div class="a-right"><button type="submit" title="<?php echo $this->__('Log In or Register') ?>" class="button" onclick="window.location='<?php echo $this->getLoginUrl() ?>';"><span><span><?php echo $this->__('Log In or Register') ?></span></span></button></div>
+<?php endif; ?>
+
+<script>
+function setConfirmCallback(voteurl){
+	if(window.confirm("<?php echo $this->__('Are you sure? You cannot vote again until tomorrow.');?>")){
+		window.location = voteurl;
+	}
+}
+</script>

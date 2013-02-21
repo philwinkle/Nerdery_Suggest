@@ -1,0 +1,42 @@
+Action Log,Connexion d'action
+Customer ID,Numéro de client
+Created At,A créé
+Action,action
+Delete,effacer
+Are you sure?,Etes-vous sûr?
+Product Suggestion Queue,Queue Suggestion produit
+Convert to Product,Autre produit d'
+Edit Product Suggestion,Modifier Suggestion produit
+Product Suggestions,Suggestions sur les produits
+Product Name,Nom du produit
+Product Description,description du produit
+# of Votes,Nombre de Votes
+Your product was successfully converted. Please fill in the rest of the information below.,Votre produit a été converti avec succès. S'il vous plaît remplir le reste du formulaire ci-dessous.
+Item does not exist,Cet item n'existe pas
+Product Suggestion has been successfully updated.,Suggestion produit a été mis à jour.
+Unable to find item to save,Impossible de trouver un élément à enregistrer
+Please select product(s),S'il vous plaît sélectionner produit (s)
+Please select log entries,S'il vous plaît sélectionner les entrées du journal
+Another product with this name exists in our database! Please try again.,Un autre produit portant ce nom existe dans notre base de données! S'il vous plaît essayez de nouveau.
+An error occurred while registering your vote.,Une erreur s'est produite lors de l'enregistrement de votre voix.
+Suggest a Product,Suggérer un produit
+Enter the name and a short description of the product below:,Entrez le nom et une brève description du produit ci-dessous:
+Product Information,information sur le produit
+* Required Fields,* Champs obligatoires
+Back,arrière
+Submit,soumettre
+Suggest a Product!,Suggérer un produit!
+View All Suggested Products,Voir tous les produits suggérés
+Product Votes,Votes produit
+Vote for This Product,Votez pour ce produit
+Create a New Suggestion,Créer une nouvelle suggestion
+You must be logged in.,Vous devez être connecté
+Log In or Register,Se connecter ou S'inscrire
+Are you sure? You cannot vote again until tomorrow.,Etes-vous sûr? Vous ne pouvez pas voter à nouveau jusqu'à demain.
+There are no items to display.,Il ya pas d'articles à afficher.
+"We're looking for some great product suggestions. If there's anything that you'd like to see in our online store, please feel free to suggest it to us by <a href='%s'>clicking here</a> or on the button below","Nous sommes à la recherche de quelques suggestions très bon produit. S'il ya quelque chose que vous aimeriez voir dans notre magasin en ligne, s'il vous plaît n'hésitez pas à nous suggérer par <a href='%s'>cliquant ici </a> ou sur le bouton ci-dessous"
+"Sorry! Voting is temporarily closed.","Désolé! Le vote est temporairement fermé."
+"Voting has closed for the weekend. Check back again soon.","Le vote est fermé pour le week-end. Revenez bientôt."
+"You may only use letters and numbers in the Product Name field.","Vous ne pouvez utiliser des lettres et des chiffres dans le champ Nom du produit."
+"You may only use letters and numbers in the Product Description field.","Vous ne pouvez utiliser des lettres et des chiffres dans le champ Description du produit."
+"Sorry, you may only perform one action per day. Please check back tomorrow!","Désolé, vous ne pouvez effectuer qu'une seule action par jour. S'il vous plaît revenez demain!"
