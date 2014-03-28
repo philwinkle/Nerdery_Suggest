@@ -145,4 +145,3 @@ For installation support please do not hesitate to contact us:
 Phillip Jackson
 The Nerdery
 tw: @philwinkle
-c: 813.785.1400
